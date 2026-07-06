@@ -30,13 +30,13 @@ public class Recursion4 {
         Print(l + 1);
     }
     
-    // To check given String is palindrome
-    static String s = "madam";
+    // To check given String is Palindrome
+    static String st = "madam";
     static boolean Printbool(int i,int l){
     if(i>=l/2){
     return true;
     }
-    if(s.charAt(i)!=s.charAt(l-i-1)){
+    if(st.charAt(i)!=st.charAt(l-i-1)){
     return false;
     }
     return Printbool(i+1,l);
@@ -74,8 +74,8 @@ public class Recursion4 {
         }
         System.out.println();
         
-        //  To check given String is palindrome
-        int k = s.length();
+        //  To check given String is Palindrome
+        int k = st.length();
         System.out.println(Printbool(0,k));
         sc.close();
     }
